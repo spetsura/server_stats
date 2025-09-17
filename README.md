@@ -22,13 +22,14 @@ Clone the repository and download the script:
 git clone https://github.com/spetsura/server_stats.git
 cd server_stats/
 ```
-Make the script executable and run it:
+Make the script executable or run it:
 
 ```bash
 chmod +x server-stats.sh
 ./server-stats.sh
 ```
-##Reference to:
+## Reference to:
+
 ```bash
 https://roadmap.sh/projects/server-stats
 ```
