@@ -16,8 +16,19 @@ A simple cross-platform Bash script that shows server performance stats: CPU, me
 
 ## Usage
 
+Clone the repository and download the script:
+
+```bash
+git clone https://github.com/spetsura/server_stats.git
+cd server_stats/
+```
 Make the script executable and run it:
 
 ```bash
 chmod +x server-stats.sh
 ./server-stats.sh
+```
+##Reference to:
+```bash
+https://roadmap.sh/projects/server-stats
+```
