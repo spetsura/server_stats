@@ -1,5 +1,5 @@
 # Server Performance Stats Script 
-A simple cross-platform Bash script that shows server performance stats: CPU, memory, swap, disks, top processes, system info, and failed SSH login attempts.
+A simple Bash script that prints a quick snapshot of a Linux server: uptime & load, total CPU usage, memory and swap, disk totals, and top-5 processes (by memory and by CPU).
 
 # server-stats.sh
 
@@ -7,12 +7,11 @@ A simple cross-platform Bash script that shows server performance stats: CPU, me
 
 ## Features
 
-- **CPU usage** — sampled from `/proc/stat` for accurate percentage.
-- **Memory usage** — shows RAM used/available and Swap usage.
-- **Disk usage** — total summary and per-mount breakdown, excluding pseudo filesystems.
-- **Top processes** — top 5 processes by CPU and by memory.
-- **System info** — OS, kernel, uptime, load average, logged-in users.
-- **Security info** — failed SSH login attempts (via `journalctl` / `lastb` / log files).
+- **Uptime & load average** - from (`uptime`).
+- **CPU usage** - parsed from `top` (100 - idle).
+- **Memory usage** - Total / Used / Free (via `free`), **Swap** Used / Free.
+- **Disk (summary)** - Total / Used / Free from `df --total` (excluding tmpfs/devtmpfs/overlay/squashfs, proc, sysfs).
+- **Top processes** - top 5 processes by CPU and by memory.
 
 ## Usage
 
